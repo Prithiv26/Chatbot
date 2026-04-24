@@ -33,17 +33,18 @@ graph.add_edge("chat_node", END)
 chatbot = graph.compile(checkpointer=checkpointer)
 
 
-while True:
-    msg = input("You: ")
-    if (msg == "bye"):
-        print("Conversation ended by user...")
-        break
-    msg = HumanMessage(content=msg)
+# while True:
+#     msg = input("You: ")
+#     if (msg == "bye"):
+#         print("Conversation ended by user...")
+#         break
+#     msg = HumanMessage(content=msg)
 
-    config = {'configurable': {'thread_id' : "2"}}
+#     config = {'configurable': {'thread_id' : "2"}}
 
-    result = chatbot.invoke({
-        "messages": [msg]
-    }, config=config)
-    print(f"AI: {result['messages'][-1].content[0]['text']}")
+#     result = chatbot.invoke({
+#         "messages": [msg]
+#     }, config=config)
+#     print(f"AI: {result['messages'][-1].content[0]['text']}")
     
+# if __name__ == "__backend__":
