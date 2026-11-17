@@ -37,7 +37,7 @@ def ai_msg_generator():
 
 
 
-st.title("Let the Learning Begin..", text_alignment="center")
+st.title("Learning Green design with Me..", text_alignment="center")
 if "messages" not in st.session_state:
     st.session_state.messages = []
 

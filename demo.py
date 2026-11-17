@@ -67,7 +67,7 @@ if "chat_history" not in st.session_state:
         st.session_state.current_session : []
     }
 
-st.title("Let the Learning Begin..", text_alignment="center")
+st.title("Learn Green design with Me..", text_alignment="center")
 
 with st.sidebar:
     st.title("Chatbot")
